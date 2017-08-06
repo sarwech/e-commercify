@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: black;
   height: 150px;
@@ -39,6 +34,7 @@ p {
 
 .mainNav {
   margin: 0 auto;
+  background-color: #000;
   width: 100%;
 }
 
@@ -94,26 +90,34 @@ input::-webkit-input-placeholder {
   color: #999;
 }
 
-/* Demo 2 */
-#demo-2 input[type=search] {
+#basic-nav-dropdown1, #basic-nav-dropdown2, #basic-nav {
+  color: white;
+}
+
+/* Search bar */
+
+.show-grid {
+  padding-top: 5px;
+}
+#searchBox input[type=search] {
   width: 15px;
   padding-left: 10px;
   color: transparent;
   cursor: pointer;
 }
-#demo-2 input[type=search]:hover {
+#searchBox input[type=search]:hover {
   background-color: #fff;
 }
-#demo-2 input[type=search]:focus {
+#searchBox input[type=search]:focus {
   width: 130px;
   padding-left: 32px;
   color: #000;
   background-color: #fff;
   cursor: auto;
 }
-#demo-2 input:-moz-placeholder {
+#searchBox input:-moz-placeholder {
   color: transparent;
 }
-#demo-2 input::-webkit-input-placeholder {
+#searchBox input::-webkit-input-placeholder {
   color: transparent;
 }
