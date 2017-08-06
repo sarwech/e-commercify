@@ -41,6 +41,8 @@ p {
   background-color: #000;
   width: 100%;
   border-radius: 0px;
+  margin-top: 43px;
+
 }
 
 input {
@@ -56,7 +58,6 @@ input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
   display: none; 
 }
-
 
 input[type=search] {
   background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
@@ -100,7 +101,7 @@ input::-webkit-input-placeholder {
   padding-top: 5px;
 }
 #searchBox input[type=search] {
-  width: 15px;
+  width: 18px;
   padding-left: 10px;
   color: transparent;
   cursor: pointer;

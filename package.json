@@ -9,7 +9,8 @@
     "react-fontawesome": "^1.6.1",
     "react-grid-gallery": "^0.4.2",
     "react-search": "^2.0.5",
-    "react-search-box": "0.0.6"
+    "react-search-box": "0.0.6",
+    "react-share-icons": "^1.1.2"
   },
   "devDependencies": {
     "react-scripts": "1.0.10"

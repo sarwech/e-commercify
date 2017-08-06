@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl, Button, Row, Col } from 'react-bootstrap';
+import Icon, {Telegram} from 'react-share-icons';
+import Instagram from 'react-share-icons/lib/Instagram';
 import '../App.css';
 
 class Header extends Component {
@@ -14,19 +16,34 @@ class Header extends Component {
 			<div>
 				<Navbar inverse className="mainNav">
 			    <Row className="show-grid">
-			      <Col xs={8} md={8}>
+			      	<Col xs={1} md={1}>  
+				        <div>
+				          <Icon type="Facebook" className="shares-facebook"/>
+				        </div>
+			      	</Col>
+			      	<Col xs={1} md={1}>  
+				        <div>
+				          <Icon type="Twitter" className="shares-twitter"/>
+				        </div>
+			      	</Col>
+			      	<Col xs={1} md={1}>  
+				        <div>
+				          <Instagram className="shares-instagram"/>
+				        </div>
+			      	</Col>
+					<Col xs={4} md={4}>
 						  <Navbar.Header>
 						    <Navbar.Brand>
-						      <a style={{color: 'black'}} href="." >depop</a>
+						      <a style={{fontSize: '28px', color: 'red', fontFamily: 'Impact'}} href="." >depop</a>
 						    </Navbar.Brand>
 						  </Navbar.Header>
-			      </Col>
+					</Col>
 			    	<Nav pullRight>
-			      	<Col xs={4} md={4}>  
-					      <FormGroup id="searchBox">
-					      	<input items={this.props.images} type="search" placeholder="Search" />
-					      </FormGroup>
-			      	</Col>
+				      	<Col xs={1} md={1}>  
+						      <FormGroup id="searchBox">
+						      	<input items={this.props.images} type="search" placeholder="Search" />
+						      </FormGroup>
+				      	</Col>
 			    	</Nav>
 			    </Row>	
 				</Navbar>
@@ -49,7 +66,9 @@ class Header extends Component {
 				      <NavItem eventKey={5} href="#" id="basic-nav">ACCESSORIES</NavItem>
 				    </Nav>
 				    <Nav pullRight>
-					    <NavItem eventKey={3} href="#">MY ACCOUNT</NavItem>
+					    <NavItem eventKey={6} href="#">MY ACCOUNT</NavItem>
+					    <NavItem eventKey={7} href="#">DOWNLOAD APP</NavItem>
+
 				    </Nav>
 				  </Navbar.Collapse>
 				</Navbar>
